@@ -1,0 +1,78 @@
+{
+  "data": {
+    "user": [
+      {
+        "username": "Sam",
+        "email": "sam.ternent@gmail.com",
+        "password": "$2a$10$ciwNojf1Hh9wyETUTKnX/eJoeLxuIjagB2m/EDCHWuh4aQ1dY/lZ6",
+        "firstName": "",
+        "lastName": "",
+        "photo": "",
+        "socialProfiles": {},
+        "createdAt": "2016-03-15T21:51:11.797Z",
+        "updatedAt": "2016-03-15T21:51:11.797Z",
+        "id": 1
+      },
+      {
+        "username": "TestUser",
+        "email": "hello@test.com",
+        "password": "$2a$10$ao5/kLMPkUdkijGC1PyEh.WQQJrVidZzdihRAkz/wo.7.xCGAoP6.",
+        "firstName": "",
+        "lastName": "",
+        "photo": "",
+        "socialProfiles": {},
+        "createdAt": "2016-03-15T22:00:03.333Z",
+        "updatedAt": "2016-03-15T22:00:03.333Z",
+        "id": 2
+      }
+    ]
+  },
+  "schema": {
+    "user": {
+      "username": {
+        "type": "string",
+        "unique": true
+      },
+      "password": {
+        "type": "string"
+      },
+      "email": {
+        "type": "string",
+        "unique": true
+      },
+      "firstName": {
+        "type": "string",
+        "defaultsTo": ""
+      },
+      "lastName": {
+        "type": "string",
+        "defaultsTo": ""
+      },
+      "photo": {
+        "type": "string",
+        "defaultsTo": ""
+      },
+      "socialProfiles": {
+        "type": "string",
+        "defaultsTo": {}
+      },
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    }
+  },
+  "counters": {
+    "user": {
+      "id": 2
+    }
+  }
+}
